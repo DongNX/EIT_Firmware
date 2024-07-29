@@ -1,0 +1,885 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.50.6.4896/W32 for ARM               29/Jul/2024  17:43:19 #
+# Copyright 2007-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  G:\Projects\EIT\EIT_Firmware\iar\Debug\Exe\openeit.out   #
+#    Map file     =  G:\Projects\EIT\EIT_Firmware\iar\Debug\List\openeit.map  #
+#    Command line =  G:\Projects\EIT\EIT_Firmware\iar\Debug\Obj\OpenEIT.o     #
+#                    G:\Projects\EIT\EIT_Firmware\iar\Debug\Obj\PinMux.o      #
+#                    G:\Projects\EIT\EIT_Firmware\iar\Debug\Obj\afe.o         #
+#                    G:\Projects\EIT\EIT_Firmware\iar\Debug\Obj\afe_lib.o     #
+#                    G:\Projects\EIT\EIT_Firmware\iar\Debug\Obj\dma.o         #
+#                    G:\Projects\EIT\EIT_Firmware\iar\Debug\Obj\gpio.o        #
+#                    G:\Projects\EIT\EIT_Firmware\iar\Debug\Obj\rtc.o         #
+#                    G:\Projects\EIT\EIT_Firmware\iar\Debug\Obj\startup.o     #
+#                    G:\Projects\EIT\EIT_Firmware\iar\Debug\Obj\system.o      #
+#                    G:\Projects\EIT\EIT_Firmware\iar\Debug\Obj\test_common.o #
+#                     G:\Projects\EIT\EIT_Firmware\iar\Debug\Obj\uart.o       #
+#                    G:\Projects\EIT\EIT_Firmware\iar\Debug\Obj\wdt.o -o      #
+#                    G:\Projects\EIT\EIT_Firmware\iar\Debug\Exe\openeit.out   #
+#                    --map G:\Projects\EIT\EIT_Firmware\iar\Debug\List\openei #
+#                    t.map --config G:\Projects\EIT\EIT_Firmware\iar\ADuCM350 #
+#                    .icf --semihosting G:\Projects\EIT\EIT_Firmware\iar\Debu #
+#                    g\iar_cortexM3l_math.a --entry __iar_program_start --vfe #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x000007fc { block CHECKSUM };
+"A2":  place at 0x000007f8 { block RSIGNATURE };
+"A3":  place at end of [0x00000800-0x0003ffff] { block CHECKSUM0 };
+"A4":  place at end of [0x00040000-0x0005ffff] { block CHECKSUM1 };
+"A5":  place at 0x0005ffe8 { block JTAG_DISABLE };
+"A6":  place at 0x0005ffec { block LOWER_FA_KEY };
+"A7":  place at 0x0005fff0 { block UPPER_FA_KEY };
+"A8":  place at 0x0005fff4 { block WRITE_PROTECT };
+"A9":  place at 0x0003e000 { block PARITY0 };
+"A10": place at 0x0005f000 { block PARITY1 };
+"A11": place at start of [0x00000000-0x000007ff] { ro section .intvec };
+"P1":  place in [from 0x00000800 to 0x0005ffff] { ro };
+"A12": place at end of [0x20000000-0x20003fff] { block CSTACK };
+"P2":  place in [from 0x20000000 to 0x20003fff] { rw, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A11":                                     0x134
+  .intvec            const    0x00000000   0x134  startup.o [1]
+                            - 0x00000134   0x134
+
+"A2":                                        0x4
+  RSIGNATURE                  0x000007f8     0x4  <Block>
+    RSIGNATURE       uninit   0x000007f8     0x4  <Block tail>
+                            - 0x000007fc     0x4
+
+"A1":                                        0x4
+  CHECKSUM                    0x000007fc     0x4  <Block>
+    CHECKSUM         uninit   0x000007fc     0x4  <Block tail>
+                            - 0x00000800     0x4
+
+"P1":                                     0xc0d4
+  .rodata            const    0x00000800  0x1d00  OpenEIT.o [1]
+  .rodata            const    0x00002500  0x1c00  OpenEIT.o [1]
+  .text              ro code  0x00004100  0x1438  OpenEIT.o [1]
+  .text              ro code  0x00005538   0xee0  system.o [1]
+  .text              ro code  0x00006418    0x8a  test_common.o [1]
+  .text              ro code  0x000064a2    0x22  zero_init3.o [6]
+  .text              ro code  0x000064c4    0x10  PinMux.o [1]
+  .text              ro code  0x000064d4     0x6  ABImemclr4.o [6]
+  .text              ro code  0x000064da    0x1c  strcat.o [3]
+  .text              ro code  0x000064f6     0xa  xsprout.o [3]
+  .text              ro code  0x00006500   0x854  uart.o [1]
+  .text              ro code  0x00006d54   0x404  gpio.o [1]
+  .text              ro code  0x00007158  0x11b4  afe.o [1]
+  .text              ro code  0x0000830c   0x6a2  afe_lib.o [1]
+  .text              ro code  0x000089b0    0xa2  arm_q15_to_q31.o [4]
+  .text              ro code  0x00008a54   0x132  I64DivMod.o [6]
+  .text              ro code  0x00008b88    0x34  sprintf.o [3]
+  .text              ro code  0x00008bbc    0x36  strlen.o [6]
+  .text              ro code  0x00008bf4   0x18a  arm_cmplx_mag_q31.o [4]
+  .text              ro code  0x00008d80    0x40  I64ToDbl.o [5]
+  .text              ro code  0x00008dc0    0xe8  DblAdd.o [5]
+  .text              ro code  0x00008ea8    0x58  DblToI32.o [5]
+  .text              ro code  0x00008f00   0x1cc  wdt.o [1]
+  .text              ro code  0x000090cc    0x24  printf.o [3]
+  .text              ro code  0x000090f0     0x4  exit.o [3]
+  .text              ro code  0x000090f4    0x32  ABImemset48.o [6]
+  .text              ro code  0x00009128    0x76  ABImemcpy.o [6]
+  .text              ro code  0x000091a0   0x4a4  dma.o [1]
+  .text              ro code  0x00009644     0x2  I64DivZer.o [6]
+  .text              ro code  0x00009648   0xcf6  xprintffull_nomb.o [3]
+  .text              ro code  0x0000a340    0x22  S64Shr.o [6]
+  .text              ro code  0x0000a364   0x130  arm_sqrt_q31.o [4]
+  .text              ro code  0x0000a494    0x30  I32ToDbl.o [5]
+  .text              ro code  0x0000a4c4   0x180  DblSub.o [5]
+  .text              ro code  0x0000a644     0xa  cexit.o [6]
+  .text              ro code  0x0000a650    0x16  strchr.o [6]
+  .text              ro code  0x0000a668    0x58  memchr.o [6]
+  .text              ro code  0x0000a6c0    0x42  xdnorm.o [5]
+  .text              ro code  0x0000a704    0x2e  DblCmpLe.o [5]
+  .text              ro code  0x0000a734    0x2e  DblCmpGe.o [5]
+  .text              ro code  0x0000a764   0x10c  xdscale.o [5]
+  .text              ro code  0x0000a870   0x1a2  DblMul.o [5]
+  .text              ro code  0x0000aa14   0x246  DblDiv.o [5]
+  .text              ro code  0x0000ac5a     0xe  div.o [3]
+  .text              ro code  0x0000ac68    0x2e  I32ToFlt.o [5]
+  .text              ro code  0x0000ac98    0xd8  FltMul.o [5]
+  .text              ro code  0x0000ad70    0x44  FltToS32.o [5]
+  .text              ro code  0x0000adb4    0x14  exit.o [7]
+  .text              ro code  0x0000adc8    0x6c  iarttio.o [7]
+  .text              ro code  0x0000ae34     0x8  XShttio.o [3]
+  .rodata            const    0x0000ae3c   0x600  OpenEIT.o [1]
+  .text              ro code  0x0000b43c   0x1aa  lz77_init.o [6]
+  .text              ro code  0x0000b5e6     0x6  abort.o [3]
+  .rodata            const    0x0000b5ec   0x180  OpenEIT.o [1]
+  .rodata            const    0x0000b76c   0x100  OpenEIT.o [1]
+  .text              ro code  0x0000b86c    0xe4  rtc.o [1]
+  .rodata            const    0x0000b950    0xc8  system.o [1]
+  .text              ro code  0x0000ba18    0xa2  startup.o [1]
+  .text              ro code  0x0000babc    0x16  cmain.o [6]
+  .text              ro code  0x0000bad2     0x4  low_level_init.o [3]
+  .text              ro code  0x0000bad8    0x28  data_init.o [6]
+  .rodata            const    0x0000bb00    0x80  uart.o [1]
+  .rodata            const    0x0000bb80    0x78  OpenEIT.o [1]
+  .rodata            const    0x0000bbf8    0x58  OpenEIT.o [1]
+  .rodata            const    0x0000bc50    0x58  OpenEIT.o [1]
+  .rodata            const    0x0000bca8    0x58  afe_lib.o [1]
+  .rodata            const    0x0000bd00    0x54  OpenEIT.o [1]
+  .rodata            const    0x0000bd54    0x54  OpenEIT.o [1]
+  .rodata            const    0x0000bda8    0x48  OpenEIT.o [1]
+  .rodata            const    0x0000bdf0    0x40  OpenEIT.o [1]
+  .rodata            const    0x0000be30    0x40  OpenEIT.o [1]
+  .rodata            const    0x0000be70    0x40  afe_lib.o [1]
+  .rodata            const    0x0000beb0    0x3c  OpenEIT.o [1]
+  .rodata            const    0x0000beec    0x3c  OpenEIT.o [1]
+  .rodata            const    0x0000bf28    0x38  OpenEIT.o [1]
+  .rodata            const    0x0000bf60    0x38  OpenEIT.o [1]
+  .rodata            const    0x0000bf98    0x38  test_common.o [1]
+  .rodata            const    0x0000bfd0    0x34  OpenEIT.o [1]
+  .rodata            const    0x0000c004    0x34  OpenEIT.o [1]
+  .rodata            const    0x0000c038    0x2c  OpenEIT.o [1]
+  .rodata            const    0x0000c064    0x28  OpenEIT.o [1]
+  .rodata            const    0x0000c08c    0x28  OpenEIT.o [1]
+  .rodata            const    0x0000c0b4    0x28  OpenEIT.o [1]
+  .rodata            const    0x0000c0dc    0x28  OpenEIT.o [1]
+  .rodata            const    0x0000c104    0x28  OpenEIT.o [1]
+  .rodata            const    0x0000c12c    0x28  OpenEIT.o [1]
+  .rodata            const    0x0000c154    0x28  OpenEIT.o [1]
+  .rodata            const    0x0000c17c    0x28  OpenEIT.o [1]
+  .rodata            const    0x0000c1a4    0x28  OpenEIT.o [1]
+  .rodata            const    0x0000c1cc    0x28  afe_lib.o [1]
+  .text              ro code  0x0000c1f4    0x28  putchar.o [3]
+  .text              ro code  0x0000c21c    0x10  write.o [7]
+  .text              ro code  0x0000c22c    0x1e  dwrite.o [7]
+  .text              ro code  0x0000c24a    0x20  iarwstd.o [7]
+  .text              ro code  0x0000c26a    0x22  iarwrite.o [7]
+  .rodata            const    0x0000c28c    0x24  OpenEIT.o [1]
+  .rodata            const    0x0000c2b0    0x24  OpenEIT.o [1]
+  .rodata            const    0x0000c2d4    0x24  afe_lib.o [1]
+  .rodata            const    0x0000c2f8    0x24  afe_lib.o [1]
+  .rodata            const    0x0000c31c    0x24  afe_lib.o [1]
+  .iar.init_table    const    0x0000c340    0x2c  - Linker created -
+  .rodata            const    0x0000c36c    0x20  OpenEIT.o [1]
+  .rodata            const    0x0000c38c    0x20  OpenEIT.o [1]
+  .rodata            const    0x0000c3ac    0x20  OpenEIT.o [1]
+  .rodata            const    0x0000c3cc    0x20  OpenEIT.o [1]
+  .rodata            const    0x0000c3ec    0x20  OpenEIT.o [1]
+  .rodata            const    0x0000c40c    0x20  OpenEIT.o [1]
+  .rodata            const    0x0000c42c    0x20  afe_lib.o [1]
+  .rodata            const    0x0000c44c    0x20  afe_lib.o [1]
+  .rodata            const    0x0000c46c    0x1c  OpenEIT.o [1]
+  .rodata            const    0x0000c488    0x1c  OpenEIT.o [1]
+  .rodata            const    0x0000c4a4    0x1c  OpenEIT.o [1]
+  .rodata            const    0x0000c4c0    0x1c  OpenEIT.o [1]
+  .rodata            const    0x0000c4dc    0x1c  afe_lib.o [1]
+  .rodata            const    0x0000c4f8    0x1c  afe_lib.o [1]
+  .rodata            const    0x0000c514    0x1c  test_common.o [1]
+  .rodata            const    0x0000c530    0x18  OpenEIT.o [1]
+  .rodata            const    0x0000c548    0x18  OpenEIT.o [1]
+  .rodata            const    0x0000c560    0x18  OpenEIT.o [1]
+  .rodata            const    0x0000c578    0x18  OpenEIT.o [1]
+  .rodata            const    0x0000c590    0x18  test_common.o [1]
+  .text              ro code  0x0000c5a8    0x16  xprout.o [3]
+  .rodata            const    0x0000c5c0    0x14  OpenEIT.o [1]
+  .rodata            const    0x0000c5d4    0x14  OpenEIT.o [1]
+  .rodata            const    0x0000c5e8    0x14  OpenEIT.o [1]
+  .rodata            const    0x0000c5fc    0x14  gpio.o [1]
+  .rodata            const    0x0000c610    0x14  gpio.o [1]
+  .rodata            const    0x0000c624    0x10  OpenEIT.o [1]
+  .rodata            const    0x0000c634    0x10  OpenEIT.o [1]
+  .rodata            const    0x0000c644    0x10  OpenEIT.o [1]
+  .rodata            const    0x0000c654    0x10  OpenEIT.o [1]
+  .rodata            const    0x0000c664    0x10  OpenEIT.o [1]
+  .rodata            const    0x0000c674    0x10  OpenEIT.o [1]
+  .rodata            const    0x0000c684    0x10  OpenEIT.o [1]
+  .rodata            const    0x0000c694    0x10  OpenEIT.o [1]
+  .rodata            const    0x0000c6a4    0x10  OpenEIT.o [1]
+  .rodata            const    0x0000c6b4    0x10  OpenEIT.o [1]
+  .rodata            const    0x0000c6c4    0x10  OpenEIT.o [1]
+  .rodata            const    0x0000c6d4    0x10  afe_lib.o [1]
+  .rodata            const    0x0000c6e4     0xc  OpenEIT.o [1]
+  .rodata            const    0x0000c6f0     0xc  OpenEIT.o [1]
+  .rodata            const    0x0000c6fc     0xc  OpenEIT.o [1]
+  .rodata            const    0x0000c708     0xc  OpenEIT.o [1]
+  .text              ro code  0x0000c714     0xc  cstartup_M.o [6]
+  .rodata            const    0x0000c720     0x8  OpenEIT.o [1]
+  .rodata            const    0x0000c728     0x8  OpenEIT.o [1]
+  .rodata            const    0x0000c730     0x8  OpenEIT.o [1]
+  .rodata            const    0x0000c738     0x8  OpenEIT.o [1]
+  .rodata            const    0x0000c740     0x8  OpenEIT.o [1]
+  .rodata            const    0x0000c748     0x8  OpenEIT.o [1]
+  .rodata            const    0x0000c750     0x8  OpenEIT.o [1]
+  .rodata            const    0x0000c758     0x8  OpenEIT.o [1]
+  .rodata            const    0x0000c760     0x8  OpenEIT.o [1]
+  .rodata            const    0x0000c768     0x8  OpenEIT.o [1]
+  .rodata            const    0x0000c770     0x8  OpenEIT.o [1]
+  .rodata            const    0x0000c778     0x8  OpenEIT.o [1]
+  .rodata            const    0x0000c780     0x8  OpenEIT.o [1]
+  .rodata            const    0x0000c788     0x8  test_common.o [1]
+  .rodata            const    0x0000c790     0x8  wdt.o [1]
+  .rodata            const    0x0000c798     0x4  OpenEIT.o [1]
+  .rodata            const    0x0000c79c     0x4  OpenEIT.o [1]
+  .rodata            const    0x0000c7a0     0x4  OpenEIT.o [1]
+  .rodata            const    0x0000c7a4     0x4  afe.o [1]
+  .rodata            const    0x0000c7a8     0x4  dma.o [1]
+  .rodata            const    0x0000c7ac     0x4  test_common.o [1]
+  .rodata            const    0x0000c7b0     0x0  zero_init3.o [6]
+  .rodata            const    0x0000c7b0     0x0  lz77_init.o [6]
+  Initializer bytes  ro data  0x0000c7b0   0x121  <for P2 s0>
+                            - 0x0000c8d1  0xc0d1
+
+"A9":                                     0x1f00
+  PARITY0                     0x0003e000  0x1f00  <Block>
+    PARITY0          uninit   0x0003e000  0x1f00  <Block tail>
+                            - 0x0003ff00  0x1f00
+
+"A3":                                        0x8
+  CHECKSUM0                   0x0003fff8     0x8  <Block>
+    CHECKSUM0        uninit   0x0003fff8     0x8  <Block tail>
+                            - 0x00040000     0x8
+
+"A10":                                     0xf80
+  PARITY1                     0x0005f000   0xf80  <Block>
+    PARITY1          uninit   0x0005f000   0xf80  <Block tail>
+                            - 0x0005ff80   0xf80
+
+"A5":                                        0x4
+  JTAG_DISABLE                0x0005ffe8     0x4  <Block>
+    JTAG_DISABLE     uninit   0x0005ffe8     0x4  <Block tail>
+                            - 0x0005ffec     0x4
+
+"A6":                                        0x4
+  LOWER_FA_KEY                0x0005ffec     0x4  <Block>
+    LOWER_FA_KEY     uninit   0x0005ffec     0x4  <Block tail>
+                            - 0x0005fff0     0x4
+
+"A7":                                        0x4
+  UPPER_FA_KEY                0x0005fff0     0x4  <Block>
+    UPPER_FA_KEY     uninit   0x0005fff0     0x4  <Block tail>
+                            - 0x0005fff4     0x4
+
+"A8":                                        0x4
+  WRITE_PROTECT               0x0005fff4     0x4  <Block>
+    WRITE_PROTECT    uninit   0x0005fff4     0x4  <Block tail>
+                            - 0x0005fff8     0x4
+
+"A4":                                        0x8
+  CHECKSUM1                   0x0005fff8     0x8  <Block>
+    CHECKSUM1        uninit   0x0005fff8     0x8  <Block tail>
+                            - 0x00060000     0x8
+
+"P2", part 1 of 2:                         0x400
+  P2 s0                       0x20000000   0x2c4  <Init block>
+    .data            inited   0x20000000    0x5c  OpenEIT.o [1]
+    .data            inited   0x2000005c    0x5c  OpenEIT.o [1]
+    .data            inited   0x200000b8    0x50  OpenEIT.o [1]
+    .data            inited   0x20000108    0x48  OpenEIT.o [1]
+    .data            inited   0x20000150    0x44  uart.o [1]
+    .data            inited   0x20000194    0x3c  OpenEIT.o [1]
+    .data            inited   0x200001d0    0x38  OpenEIT.o [1]
+    .data            inited   0x20000208    0x28  OpenEIT.o [1]
+    .data            inited   0x20000230    0x28  OpenEIT.o [1]
+    .data            inited   0x20000258    0x28  OpenEIT.o [1]
+    .data            inited   0x20000280    0x28  OpenEIT.o [1]
+    .data            inited   0x200002a8     0xc  system.o [1]
+    .data            inited   0x200002b4     0x8  XShttio.o [3]
+    .data            inited   0x200002bc     0x4  dma.o [1]
+    .data            inited   0x200002c0     0x4  dma.o [1]
+                            - 0x200002c4   0x2c4
+
+"P2", part 2 of 2:                         0x394
+  .bss               zero     0x20000400   0x200  dma.o [1]
+  .bss               zero     0x20000600    0x64  OpenEIT.o [1]
+  .bss               zero     0x20000664    0x60  afe.o [1]
+  .bss               zero     0x200006c4    0x5c  gpio.o [1]
+  .bss               zero     0x20000720    0x18  afe.o [1]
+  .bss               zero     0x20000738    0x18  afe.o [1]
+  .bss               zero     0x20000750    0x14  rtc.o [1]
+  .bss               zero     0x20000764     0xc  dma.o [1]
+  .bss               zero     0x20000770     0x4  OpenEIT.o [1]
+  .bss               zero     0x20000774     0x4  OpenEIT.o [1]
+  .bss               zero     0x20000778     0x4  afe.o [1]
+  .bss               zero     0x2000077c     0x4  system.o [1]
+  .bss               zero     0x20000780     0x4  system.o [1]
+  .bss               zero     0x20000784     0x4  system.o [1]
+  .bss               zero     0x20000788     0x4  wdt.o [1]
+  .bss               zero     0x2000078c     0x2  OpenEIT.o [1]
+  .bss               zero     0x2000078e     0x1  afe.o [1]
+  .bss               zero     0x2000078f     0x1  system.o [1]
+  .bss               zero     0x20000790     0x1  system.o [1]
+                            - 0x20000791   0x391
+
+"A12":                                     0x400
+  CSTACK                      0x20003c00   0x400  <Block>
+    CSTACK           uninit   0x20003c00   0x400  <Block tail>
+                            - 0x20004000   0x400
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x391:
+          0x20000400  0x391
+
+Copy/lz77 (__iar_lz77_init3)
+    1 source range, total size 0x121 (40% of destination):
+          0x0000c7b0  0x121
+    1 destination range, total size 0x2c4:
+          0x20000000  0x2c4
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module               ro code  ro data  rw data
+    ------               -------  -------  -------
+G:\Projects\EIT\EIT_Firmware\iar\Debug\Obj: [1]
+    OpenEIT.o              5 176   19 294      722
+    PinMux.o                  16
+    afe.o                  4 532        4      149
+    afe_lib.o              1 698      436
+    dma.o                  1 188        8      532
+    gpio.o                 1 028       40       92
+    rtc.o                    228                20
+    startup.o                162      308
+    system.o               3 808      205       26
+    test_common.o            138      120
+    uart.o                 2 132      155       68
+    wdt.o                    460        8        4
+    ----------------------------------------------
+    Total:                20 566   20 578    1 613
+
+command line: [2]
+    ----------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    XShttio.o                  8        3        8
+    abort.o                    6
+    div.o                     14
+    exit.o                     4
+    low_level_init.o           4
+    printf.o                  36
+    putchar.o                 40
+    sprintf.o                 52
+    strcat.o                  28
+    xprintffull_nomb.o     3 318
+    xprout.o                  22
+    xsprout.o                 10
+    ----------------------------------------------
+    Total:                 3 542        3        8
+
+iar_cortexM3l_math.a: [4]
+    arm_cmplx_mag_q31.o      394
+    arm_q15_to_q31.o         162
+    arm_sqrt_q31.o           304
+    ----------------------------------------------
+    Total:                   860
+
+m7M_tl.a: [5]
+    DblAdd.o                 232
+    DblCmpGe.o                46
+    DblCmpLe.o                46
+    DblDiv.o                 582
+    DblMul.o                 418
+    DblSub.o                 384
+    DblToI32.o                88
+    FltMul.o                 216
+    FltToS32.o                68
+    I32ToDbl.o                48
+    I32ToFlt.o                46
+    I64ToDbl.o                64
+    xdnorm.o                  66
+    xdscale.o                268
+    ----------------------------------------------
+    Total:                 2 572
+
+rt7M_tl.a: [6]
+    ABImemclr4.o               6
+    ABImemcpy.o              118
+    ABImemset48.o             50
+    I64DivMod.o              306
+    I64DivZer.o                2
+    S64Shr.o                  34
+    cexit.o                   10
+    cmain.o                   22
+    cstartup_M.o              12
+    data_init.o               40
+    lz77_init.o              426
+    memchr.o                  88
+    strchr.o                  22
+    strlen.o                  54
+    zero_init3.o              34
+    ----------------------------------------------
+    Total:                 1 224
+
+shb_l.a: [7]
+    dwrite.o                  30
+    exit.o                    20
+    iarttio.o                108
+    iarwrite.o                34
+    iarwstd.o                 32
+    write.o                   16
+    ----------------------------------------------
+    Total:                   240
+
+    Gaps                      38        2
+    Linker created                     44   12 968
+--------------------------------------------------
+    Grand Total:          29 042   20 627   14 589
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+?main                   0x0000babd          Code  Gb  cmain.o [6]
+AFE_Capture_Int_Handler
+                        0x00007f3f    0xa4  Code  Gb  afe.o [1]
+AFE_CmdFIFO_Int_Handler
+                        0x0000804f    0xcc  Code  Gb  afe.o [1]
+AFE_DataFIFO_Int_Handler
+                        0x0000811b    0x96  Code  Gb  afe.o [1]
+AFE_DevData             0x20000664    0x60  Data  Gb  afe.o [1]
+AFE_Generate_Int_Handler
+                        0x00007fe3    0x6c  Code  Gb  afe.o [1]
+ArePinsValid            0x00007135     0xe  Code  Lc  gpio.o [1]
+Beep_Int_Handler        0x0000baa7     0x2  Code  Wk  startup.o [1]
+BusFault_Handler        0x0000ba5f     0x2  Code  Wk  startup.o [1]
+CHECKSUM$$Base          0x000007fc           --   Gb  - Linker created -
+CHECKSUM$$Limit         0x00000800           --   Gb  - Linker created -
+CHECKSUM0$$Base         0x0003fff8           --   Gb  - Linker created -
+CHECKSUM0$$Limit        0x00040000           --   Gb  - Linker created -
+CHECKSUM1$$Base         0x0005fff8           --   Gb  - Linker created -
+CHECKSUM1$$Limit        0x00060000           --   Gb  - Linker created -
+CSTACK$$Base            0x20003c00           --   Gb  - Linker created -
+CSTACK$$Limit           0x20004000           --   Gb  - Linker created -
+CapTouch_Int_Handler    0x0000baab     0x2  Code  Wk  startup.o [1]
+ClockStateConfig        0x200002a8     0xc  Data  Lc  system.o [1]
+CommonInterruptHandler  0x00007011    0x6c  Code  Gb  gpio.o [1]
+DMA_AFE_RX_Int_Handler  0x000081dd    0xf0  Code  Gb  afe.o [1]
+DMA_AFE_TX_Int_Handler  0x000081b1    0x28  Code  Gb  afe.o [1]
+DMA_CRC_Int_Handler     0x0000ba93     0x2  Code  Wk  startup.o [1]
+DMA_DevData             0x20000764     0xc  Data  Gb  dma.o [1]
+DMA_Err_Int_Handler     0x0000ba7b     0x2  Code  Wk  startup.o [1]
+DMA_I2C0_MX_Int_Handler
+                        0x0000ba91     0x2  Code  Wk  startup.o [1]
+DMA_I2C0_SRX_Int_Handler
+                        0x0000ba8f     0x2  Code  Wk  startup.o [1]
+DMA_I2C0_STX_Int_Handler
+                        0x0000ba8d     0x2  Code  Wk  startup.o [1]
+DMA_I2S_Int_Handler     0x0000ba97     0x2  Code  Wk  startup.o [1]
+DMA_PDI_Int_Handler     0x0000ba95     0x2  Code  Wk  startup.o [1]
+DMA_SPI0_RX_Int_Handler
+                        0x0000ba83     0x2  Code  Wk  startup.o [1]
+DMA_SPI0_TX_Int_Handler
+                        0x0000ba81     0x2  Code  Wk  startup.o [1]
+DMA_SPI1_RX_Int_Handler
+                        0x0000ba87     0x2  Code  Wk  startup.o [1]
+DMA_SPI1_TX_Int_Handler
+                        0x0000ba85     0x2  Code  Wk  startup.o [1]
+DMA_SPIH_RX_Int_Handler
+                        0x0000ba7f     0x2  Code  Wk  startup.o [1]
+DMA_SPIH_TX_Int_Handler
+                        0x0000ba7d     0x2  Code  Wk  startup.o [1]
+DMA_UART_RX_Int_Handler
+                        0x0000ba8b     0x2  Code  Wk  startup.o [1]
+DMA_UART_TX_Int_Handler
+                        0x0000ba89     0x2  Code  Wk  startup.o [1]
+DebugMon_Handler        0x0000ba65     0x2  Code  Wk  startup.o [1]
+Ext_Int0_Handler        0x0000707d     0xc  Code  Gb  gpio.o [1]
+Ext_Int1_Handler        0x00007089     0xc  Code  Gb  gpio.o [1]
+Ext_Int2_Handler        0x00007095     0xc  Code  Gb  gpio.o [1]
+Ext_Int3_Handler        0x000070a1     0xc  Code  Gb  gpio.o [1]
+Ext_Int4_Handler        0x000070ad     0xc  Code  Gb  gpio.o [1]
+Ext_Int5_Handler        0x000070b9     0xc  Code  Gb  gpio.o [1]
+Ext_Int6_Handler        0x000070c5     0xc  Code  Gb  gpio.o [1]
+Ext_Int7_Handler        0x000070d1     0xc  Code  Gb  gpio.o [1]
+Ext_Int8_Handler        0x000070dd     0xc  Code  Gb  gpio.o [1]
+Flash0_Int_Handler      0x0000ba71     0x2  Code  Wk  startup.o [1]
+Flash1_Int_Handler      0x0000baa3     0x2  Code  Wk  startup.o [1]
+GPFlash_Int_Handler     0x0000baad     0x2  Code  Wk  startup.o [1]
+GPIO_A_Int_Handler      0x000070e9     0xc  Code  Gb  gpio.o [1]
+GPIO_B_Int_Handler      0x000070f5     0xc  Code  Gb  gpio.o [1]
+GP_Tmr0_Int_Handler     0x0000ba6d     0x2  Code  Wk  startup.o [1]
+GP_Tmr1_Int_Handler     0x0000ba6f     0x2  Code  Wk  startup.o [1]
+GP_Tmr2_Int_Handler     0x0000baa1     0x2  Code  Wk  startup.o [1]
+GetClockSourceStatus    0x00005d8f    0xbc  Code  Gb  system.o [1]
+GetSystemClockMux       0x0000576b    0x48  Code  Gb  system.o [1]
+HardFault_Handler       0x0000ba5b     0x2  Code  Wk  startup.o [1]
+I2C0_Master_Int_Handler
+                        0x0000ba79     0x2  Code  Wk  startup.o [1]
+I2C0_Slave_Int_Handler  0x0000ba77     0x2  Code  Wk  startup.o [1]
+I2S_Int_Handler         0x0000ba9f     0x2  Code  Wk  startup.o [1]
+InStream_Read           0x0000b43d    0x22  Code  Lc  lz77_init.o [6]
+IsInterruptValid        0x00007143    0x16  Code  Lc  gpio.o [1]
+IsPortValid             0x00007101    0x1e  Code  Lc  gpio.o [1]
+JTAG_DISABLE$$Base      0x0005ffe8           --   Gb  - Linker created -
+JTAG_DISABLE$$Limit     0x0005ffec           --   Gb  - Linker created -
+LCD_Int_Handler         0x0000baa9     0x2  Code  Wk  startup.o [1]
+LOWER_FA_KEY$$Base      0x0005ffec           --   Gb  - Linker created -
+LOWER_FA_KEY$$Limit     0x0005fff0           --   Gb  - Linker created -
+MemManage_Handler       0x0000ba5d     0x2  Code  Wk  startup.o [1]
+NVIC_DisableIRQ         0x00007171    0x18  Code  Lc  afe.o [1]
+NVIC_DisableIRQ         0x00006519    0x18  Code  Lc  uart.o [1]
+NVIC_DisableIRQ         0x00008f19    0x18  Code  Lc  wdt.o [1]
+NVIC_EnableIRQ          0x00007159    0x18  Code  Lc  afe.o [1]
+NVIC_EnableIRQ          0x00006501    0x18  Code  Lc  uart.o [1]
+NVIC_EnableIRQ          0x00008f01    0x18  Code  Lc  wdt.o [1]
+NVIC_SetPriorityGrouping
+                        0x00004101    0x22  Code  Lc  OpenEIT.o [1]
+NmiSR                   0x0000ba59     0x2  Code  Wk  startup.o [1]
+OutStream_Write         0x0000b45f    0x40  Code  Lc  lz77_init.o [6]
+PARITY0$$Base           0x0003e000           --   Gb  - Linker created -
+PARITY0$$Limit          0x0003ff00           --   Gb  - Linker created -
+PARITY1$$Base           0x0005f000           --   Gb  - Linker created -
+PARITY1$$Limit          0x0005ff80           --   Gb  - Linker created -
+PDI_Int_Handler         0x0000bab5     0x2  Code  Wk  startup.o [1]
+PLL_Int_Handler         0x0000bab1     0x2  Code  Wk  startup.o [1]
+Parity_Int_Handler      0x0000bab7     0x2  Code  Wk  startup.o [1]
+PendSV_Handler          0x0000ba67     0x2  Code  Wk  startup.o [1]
+ProcessRequest          0x000067dd    0xaa  Code  Lc  uart.o [1]
+RESERVED_VECTOR         0x0000bab9     0x2  Code  Wk  startup.o [1]
+RSIGNATURE$$Base        0x000007f8           --   Gb  - Linker created -
+RSIGNATURE$$Limit       0x000007fc           --   Gb  - Linker created -
+RTC_Int_Handler         0x0000b8bd    0x8c  Code  Gb  rtc.o [1]
+Random_Int_Handler      0x0000bab3     0x2  Code  Wk  startup.o [1]
+Region$$Table$$Base     0x0000c340           --   Gb  - Linker created -
+Region$$Table$$Limit    0x0000c36c           --   Gb  - Linker created -
+ResetCircularBuffers    0x00006887    0x2e  Code  Lc  uart.o [1]
+ResetISR                0x0000ba19    0x34  Code  Wk  startup.o [1]
+RxBuffer                0x2000078c     0x2  Data  Lc  OpenEIT.o [1]
+SPI0_Int_Handler        0x0000ba73     0x2  Code  Wk  startup.o [1]
+SPI1_Int_Handler        0x0000baa5     0x2  Code  Wk  startup.o [1]
+SPIH_Int_Handler        0x0000ba75     0x2  Code  Wk  startup.o [1]
+SVC_Handler             0x0000ba63     0x2  Code  Wk  startup.o [1]
+SetPllFreq              0x00005e4b    0x64  Code  Gb  system.o [1]
+SetSystemClockDivider   0x000058bd    0xcc  Code  Gb  system.o [1]
+SetSystemClockMux       0x00005683    0xe8  Code  Gb  system.o [1]
+StateTransitionTable    0x0000b950    0xc8  Data  Lc  system.o [1]
+SysTick_Handler         0x0000ba69     0x2  Code  Wk  startup.o [1]
+SystemClockSourcePowerDownIfUnused
+                        0x00005b45   0x24a  Code  Gb  system.o [1]
+SystemClockSourcePowerUp
+                        0x00005a87    0xbe  Code  Gb  system.o [1]
+SystemCoreClockUpdate   0x000055e5    0x9e  Code  Gb  system.o [1]
+SystemEnableClock       0x0000584b    0x72  Code  Gb  system.o [1]
+SystemEnableClockSource
+                        0x00005989    0xfe  Code  Gb  system.o [1]
+SystemEnterLowPowerMode
+                        0x00005eaf    0xd2  Code  Gb  system.o [1]
+SystemExitLowPowerMode  0x00005f81    0x26  Code  Gb  system.o [1]
+SystemGetClockFrequency
+                        0x000057b3    0x98  Code  Gb  system.o [1]
+SystemInit              0x00005539    0xac  Code  Gb  system.o [1]
+SystemTransitionClocks  0x00006011    0x96  Code  Gb  system.o [1]
+TxBuffer                0x20000600    0x64  Data  Lc  OpenEIT.o [1]
+UART_DevData            0x20000150    0x44  Data  Lc  uart.o [1]
+UART_Int_Handler        0x00006557    0xd6  Code  Gb  uart.o [1]
+UART_RX_Status_Handler  0x00006531    0x26  Code  Lc  uart.o [1]
+UPPER_FA_KEY$$Base      0x0005fff0           --   Gb  - Linker created -
+UPPER_FA_KEY$$Limit     0x0005fff4           --   Gb  - Linker created -
+USB_Control_Int_Handler
+                        0x0000ba9b     0x2  Code  Wk  startup.o [1]
+USB_DMA_Int_Handler     0x0000ba9d     0x2  Code  Wk  startup.o [1]
+USB_Wakeup_Int_Handler  0x0000ba99     0x2  Code  Wk  startup.o [1]
+UsageFault_Handler      0x0000ba61     0x2  Code  Wk  startup.o [1]
+ValidateParams          0x000094f3    0xfe  Code  Lc  dma.o [1]
+WDT_DevData             0x20000788     0x4  Data  Lc  wdt.o [1]
+WDog_Tmr_Int_Handler    0x0000909b     0xa  Code  Gb  wdt.o [1]
+WRITE_PROTECT$$Base     0x0005fff4           --   Gb  - Linker created -
+WRITE_PROTECT$$Limit    0x0005fff8           --   Gb  - Linker created -
+WakeUp_Int_Handler      0x0000ba6b     0x2  Code  Wk  startup.o [1]
+XTAL_Int_Handler        0x0000baaf     0x2  Code  Wk  startup.o [1]
+_GenldFullNoMb          0x0000a095   0x260  Code  Lc  xprintffull_nomb.o [3]
+_LdtobFullNoMb          0x00009ca5   0x3ea  Code  Lc  xprintffull_nomb.o [3]
+_LitobFullNoMb          0x00009b93   0x10c  Code  Lc  xprintffull_nomb.o [3]
+_PrintfFullNoMb         0x00009649   0x544  Code  Gb  xprintffull_nomb.o [3]
+_Prout                  0x0000c5a9    0x16  Code  Gb  xprout.o [3]
+_PutcharsFullNoMb       0x0000a2f5    0x2e  Code  Lc  xprintffull_nomb.o [3]
+_SProut                 0x000064f7     0xa  Code  Gb  xsprout.o [3]
+__aeabi_cdcmple         0x0000a705          Code  Gb  DblCmpLe.o [5]
+__aeabi_cdrcmple        0x0000a735          Code  Gb  DblCmpGe.o [5]
+__aeabi_d2iz            0x00008ea9          Code  Gb  DblToI32.o [5]
+__aeabi_d2uiz           0x00008ed5          Code  Gb  DblToI32.o [5]
+__aeabi_dadd            0x00008dc1          Code  Gb  DblAdd.o [5]
+__aeabi_ddiv            0x0000aa15          Code  Gb  DblDiv.o [5]
+__aeabi_dmul            0x0000a871          Code  Gb  DblMul.o [5]
+__aeabi_dsub            0x0000a4c5          Code  Gb  DblSub.o [5]
+__aeabi_f2iz            0x0000ad71          Code  Gb  FltToS32.o [5]
+__aeabi_fmul            0x0000ac99          Code  Gb  FltMul.o [5]
+__aeabi_i2d             0x0000a495          Code  Gb  I32ToDbl.o [5]
+__aeabi_i2f             0x0000ac69          Code  Gb  I32ToFlt.o [5]
+__aeabi_lasr            0x0000a341          Code  Gb  S64Shr.o [6]
+__aeabi_ldiv0           0x00009645          Code  Gb  I64DivZer.o [6]
+__aeabi_ldivmod         0x00008a55          Code  Gb  I64DivMod.o [6]
+__aeabi_memclr4         0x000064d5          Code  Gb  ABImemclr4.o [6]
+__aeabi_memcpy          0x00009129          Code  Gb  ABImemcpy.o [6]
+__aeabi_memcpy4         0x00009149          Code  Gb  ABImemcpy.o [6]
+__aeabi_memcpy8         0x00009149          Code  Gb  ABImemcpy.o [6]
+__aeabi_ui2d            0x0000a4a9          Code  Gb  I32ToDbl.o [5]
+__aeabi_ul2d            0x00008d81          Code  Gb  I64ToDbl.o [5]
+__aeabi_uldivmod        0x00008a99          Code  Gb  I64DivMod.o [6]
+__cmain                 0x0000babd          Code  Gb  cmain.o [6]
+__dwrite                0x0000c22d    0x1e  Code  Gb  dwrite.o [7]
+__exit                  0x0000adb5    0x14  Code  Gb  exit.o [7]
+__iar_Dnorm             0x0000a6c1    0x42  Code  Gb  xdnorm.o [5]
+__iar_Dscale            0x0000a765   0x10c  Code  Gb  xdscale.o [5]
+__iar_Memchr            0x0000a669          Code  Gb  memchr.o [6]
+__iar_Memset4_word      0x000090f5          Code  Gb  ABImemset48.o [6]
+__iar_Memset8_word      0x000090f5          Code  Gb  ABImemset48.o [6]
+__iar_Strchr            0x0000a651          Code  Gb  strchr.o [6]
+__iar_close_ttio        0x0000adc9    0x2e  Code  Gb  iarttio.o [7]
+__iar_d2uiz             0x00008ee1          Code  Gb  DblToI32.o [5]
+__iar_dadd              0x00008dd5          Code  Gb  DblAdd.o [5]
+__iar_data_init3        0x0000bad9    0x28  Code  Gb  data_init.o [6]
+__iar_dsub              0x0000a4d9          Code  Gb  DblSub.o [5]
+__iar_dsubStart         0x0000a4eb          Code  Gb  DblSub.o [5]
+__iar_get_ttio          0x0000adf9    0x38  Code  Gb  iarttio.o [7]
+__iar_lookup_ttioh      0x0000ae35     0x8  Code  Gb  XShttio.o [3]
+__iar_lz77_init3        0x0000b49f   0x148  Code  Gb  lz77_init.o [6]
+__iar_program_start     0x0000c715          Code  Gb  cstartup_M.o [6]
+__iar_sh_stdout         0x0000c24b    0x20  Code  Gb  iarwstd.o [7]
+__iar_sh_write          0x0000c26b    0x22  Code  Gb  iarwrite.o [7]
+__iar_ttio_handles      0x200002b4     0x8  Data  Lc  XShttio.o [3]
+__iar_ui2d              0x0000a4ad          Code  Gb  I32ToDbl.o [5]
+__iar_ui2f              0x0000ac7d          Code  Gb  I32ToFlt.o [5]
+__iar_ul2d              0x00008d85          Code  Gb  I64ToDbl.o [5]
+__iar_zero_init3        0x000064a3    0x22  Code  Gb  zero_init3.o [6]
+__low_level_init        0x0000bad3     0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000   0x134  Data  Gb  startup.o [1]
+__write                 0x0000c21d    0x10  Code  Gb  write.o [7]
+_call_main              0x0000bac9          Code  Gb  cmain.o [6]
+_exit                   0x0000a645          Code  Gb  cexit.o [6]
+_main                   0x0000bacf          Code  Gb  cmain.o [6]
+aEnterMeasurementState  0x00006121    0xf6  Code  Lc  system.o [1]
+aEnterMinimalState      0x000060bd    0x4e  Code  Lc  system.o [1]
+aEnterUSBLPMState       0x00006331    0x44  Code  Lc  system.o [1]
+aEnterUSBState          0x0000621d   0x114  Code  Lc  system.o [1]
+abort                   0x0000b5e7     0x6  Code  Gb  abort.o [3]
+adi_AFE_AuxChanCal      0x00008367    0xd8  Code  Gb  afe_lib.o [1]
+adi_AFE_ClearInterruptSource
+                        0x00007eb9    0x86  Code  Gb  afe.o [1]
+adi_AFE_EnableInterruptSource
+                        0x00007df1    0xc8  Code  Gb  afe.o [1]
+adi_AFE_EnableSoftwareCRC
+                        0x00007bc1     0xa  Code  Gb  afe.o [1]
+adi_AFE_ExciteChanCalAtten
+                        0x00008765    0xe8  Code  Gb  afe_lib.o [1]
+adi_AFE_ExciteChanPowerUp
+                        0x00008503    0x60  Code  Gb  afe_lib.o [1]
+adi_AFE_GetRcal         0x00007c1b    0x2e  Code  Gb  afe.o [1]
+adi_AFE_GetRtia         0x00007c75    0x2e  Code  Gb  afe.o [1]
+adi_AFE_GetRxDmaComplete
+                        0x00007705    0x62  Code  Gb  afe.o [1]
+adi_AFE_GetSeqFinished  0x000076b3    0x52  Code  Gb  afe.o [1]
+adi_AFE_HandleNotInitialized
+                        0x00007bdf    0x10  Code  Gb  afe.o [1]
+adi_AFE_Init            0x00007cb1    0xc6  Code  Gb  afe.o [1]
+adi_AFE_InvalidHandle   0x00007bcb    0x14  Code  Gb  afe.o [1]
+adi_AFE_PowerDown       0x0000884d    0x7a  Code  Gb  afe_lib.o [1]
+adi_AFE_PowerUp         0x0000830d    0x5a  Code  Gb  afe_lib.o [1]
+adi_AFE_ProgramRxDMA    0x000075bf    0x90  Code  Gb  afe.o [1]
+adi_AFE_ProgramTxDMA    0x00007533    0x8c  Code  Gb  afe.o [1]
+adi_AFE_ReadCalibrationRegister
+                        0x00007311    0x5c  Code  Gb  afe.o [1]
+adi_AFE_RunSequence     0x00007a29   0x18e  Code  Gb  afe.o [1]
+adi_AFE_SeqAbort        0x0000792d    0x6c  Code  Gb  afe.o [1]
+adi_AFE_SeqCheck        0x00007999    0x80  Code  Gb  afe.o [1]
+adi_AFE_SeqInit         0x00007767    0xf4  Code  Gb  afe.o [1]
+adi_AFE_SeqStart        0x0000785b    0x5e  Code  Gb  afe.o [1]
+adi_AFE_SeqStop         0x000078b9    0x74  Code  Gb  afe.o [1]
+adi_AFE_SetRcal         0x00007bef    0x2c  Code  Gb  afe.o [1]
+adi_AFE_SetRtia         0x00007c49    0x2c  Code  Gb  afe.o [1]
+adi_AFE_SetSwitchState  0x00007253    0x52  Code  Gb  afe.o [1]
+adi_AFE_TempSensChanCal
+                        0x0000843f    0xc4  Code  Gb  afe_lib.o [1]
+adi_AFE_TiaChanCal      0x00008563   0x202  Code  Gb  afe_lib.o [1]
+adi_AFE_TiaChanDacCode  0x00008939    0x76  Code  Gb  afe_lib.o [1]
+adi_AFE_UnInit          0x00007d77    0x7a  Code  Gb  afe.o [1]
+adi_AFE_WriteCalibrationRegister
+                        0x000072a5    0x6c  Code  Gb  afe.o [1]
+adi_DMA_Init            0x000091a1   0x152  Code  Gb  dma.o [1]
+adi_DMA_ReSubmit        0x0000948f    0x64  Code  Gb  dma.o [1]
+adi_DMA_SubmitTransfer  0x00009365   0x12a  Code  Gb  dma.o [1]
+adi_DMA_UnInit          0x000092f3    0x72  Code  Gb  dma.o [1]
+adi_GPIO_ClearIRQ       0x00006e15    0x36  Code  Gb  gpio.o [1]
+adi_GPIO_Device         0x200006c4    0x5c  Data  Lc  gpio.o [1]
+adi_GPIO_GetOutputEnable
+                        0x00006f4d    0x26  Code  Gb  gpio.o [1]
+adi_GPIO_GetPullUpEnable
+                        0x00006f73    0x26  Code  Gb  gpio.o [1]
+adi_GPIO_Init           0x00006d55    0x3a  Code  Gb  gpio.o [1]
+adi_GPIO_ResetToPowerUp
+                        0x00006db3    0x62  Code  Gb  gpio.o [1]
+adi_GPIO_SetHigh        0x00006f99    0x3c  Code  Gb  gpio.o [1]
+adi_GPIO_SetInputEnable
+                        0x00006ea1    0x56  Code  Gb  gpio.o [1]
+adi_GPIO_SetLow         0x00006fd5    0x3c  Code  Gb  gpio.o [1]
+adi_GPIO_SetOutputEnable
+                        0x00006e4b    0x56  Code  Gb  gpio.o [1]
+adi_GPIO_SetPullUpEnable
+                        0x00006ef7    0x56  Code  Gb  gpio.o [1]
+adi_GPIO_UnInit         0x00006d8f    0x24  Code  Gb  gpio.o [1]
+adi_RTC_ClearInterruptStatus
+                        0x0000b86d    0x50  Code  Gb  rtc.o [1]
+adi_UART_BufFlush       0x00006a5f    0x42  Code  Gb  uart.o [1]
+adi_UART_BufRx          0x00006a01    0x5e  Code  Gb  uart.o [1]
+adi_UART_BufTx          0x000069a3    0x5e  Code  Gb  uart.o [1]
+adi_UART_Enable         0x00006c6d    0x42  Code  Gb  uart.o [1]
+adi_UART_GetNumRxBytes  0x00006d19    0x20  Code  Gb  uart.o [1]
+adi_UART_Init           0x000068b5    0xa8  Code  Gb  uart.o [1]
+adi_UART_SetBaudRate    0x00006aa1    0xa2  Code  Gb  uart.o [1]
+adi_UART_SetBlockingMode
+                        0x00006d07    0x12  Code  Gb  uart.o [1]
+adi_UART_SetGenericSettings
+                        0x00006b43    0x94  Code  Gb  uart.o [1]
+adi_UART_SetInterruptMode
+                        0x00006caf    0x58  Code  Gb  uart.o [1]
+adi_UART_SetParityMode  0x00006bd7    0x5c  Code  Gb  uart.o [1]
+adi_UART_SetWordLength  0x00006c33    0x3a  Code  Gb  uart.o [1]
+adi_UART_UnInit         0x0000695d    0x46  Code  Gb  uart.o [1]
+adi_WDT_Init            0x00008f31    0x92  Code  Gb  wdt.o [1]
+adi_WDT_ResetTimer      0x00009057    0x44  Code  Gb  wdt.o [1]
+adi_WDT_SetEnable       0x00008ff5    0x62  Code  Gb  wdt.o [1]
+adi_WDT_UnInit          0x00008fc3    0x32  Code  Gb  wdt.o [1]
+adi_initpinmux          0x000064c5    0x10  Code  Gb  PinMux.o [1]
+arm_cmplx_mag_q31       0x00008bf5   0x18a  Code  Gb  arm_cmplx_mag_q31.o [4]
+arm_q15_to_q31          0x000089b1    0xa2  Code  Gb  arm_q15_to_q31.o [4]
+arm_sqrt_q31            0x0000a365   0x130  Code  Gb  arm_sqrt_q31.o [4]
+bioimpedance_spectroscopy
+                        0x000046fd   0x118  Code  Gb  OpenEIT.o [1]
+bipolar_adg732          0x00004b95   0x23a  Code  Gb  OpenEIT.o [1]
+calculate_bipolar_magnitude
+                        0x0000451b    0x5a  Code  Gb  OpenEIT.o [1]
+calculate_magnitude     0x000044c1    0x5a  Code  Gb  OpenEIT.o [1]
+changeClockDividers     0x00006375    0x3c  Code  Lc  system.o [1]
+convert_dft_results     0x0000445b    0x66  Code  Gb  OpenEIT.o [1]
+crc8                    0x0000764f    0x3c  Code  Lc  afe.o [1]
+currentState            0x20000790     0x1  Data  Lc  system.o [1]
+delay                   0x000046f3     0xa  Code  Gb  OpenEIT.o [1]
+div                     0x0000ac5b     0xe  Code  Gb  div.o [3]
+dmaDisable              0x0000747f    0x62  Code  Lc  afe.o [1]
+dmaEnable               0x0000740f    0x70  Code  Lc  afe.o [1]
+dmaInit                 0x0000736d    0xa2  Code  Lc  afe.o [1]
+dmaUnInit               0x000074e1    0x52  Code  Lc  afe.o [1]
+do_read                 0x0000662d    0xe2  Code  Lc  uart.o [1]
+do_write                0x0000670f    0xce  Code  Lc  uart.o [1]
+electrode_configuration_16_opposition
+                        0x0000ae3c   0x600  Data  Gb  OpenEIT.o [1]
+electrode_configuration_32_adjacent
+                        0x00000800  0x1d00  Data  Gb  OpenEIT.o [1]
+electrode_configuration_32_opposition
+                        0x00002500  0x1c00  Data  Gb  OpenEIT.o [1]
+electrode_configuration_8_opposition
+                        0x0000b76c   0x100  Data  Gb  OpenEIT.o [1]
+exit                    0x000090f1     0x4  Code  Gb  exit.o [3]
+fifoDisable             0x000071f5    0x5e  Code  Lc  afe.o [1]
+fifoEnable              0x00007189    0x6c  Code  Lc  afe.o [1]
+gChannelControlDataArray
+                        0x20000400   0x200  Data  Lc  dma.o [1]
+gDmaDescriptorForAFERx  0x20000738    0x18  Data  Lc  afe.o [1]
+gDmaDescriptorForAFETx  0x20000720    0x18  Data  Lc  afe.o [1]
+gRTC_DevData            0x20000750    0x14  Data  Gb  rtc.o [1]
+gWdtStaticInitData      0x0000c790     0x8  Data  Lc  wdt.o [1]
+gpioClock               0x20000784     0x4  Data  Lc  system.o [1]
+hDevice                 0x20000774     0x4  Data  Gb  OpenEIT.o [1]
+hUartDevice             0x20000770     0x4  Data  Gb  OpenEIT.o [1]
+hfClock                 0x20000780     0x4  Data  Lc  system.o [1]
+init_GPIO_ports         0x00005191   0x2ae  Code  Gb  OpenEIT.o [1]
+init_mode_bipolar       0x00004de9    0xcc  Code  Gb  OpenEIT.o [1]
+init_mode_bis           0x00004ec1   0x11e  Code  Gb  OpenEIT.o [1]
+init_mode_tetramux      0x00004fe9   0x174  Code  Gb  OpenEIT.o [1]
+isLfClkUsed             0x00005fa7    0x46  Code  Lc  system.o [1]
+lfClock                 0x2000077c     0x4  Data  Lc  system.o [1]
+m1_configuration        0x20000208    0x28  Data  Gb  OpenEIT.o [1]
+m2_configuration        0x20000230    0x28  Data  Gb  OpenEIT.o [1]
+m3_configuration        0x20000258    0x28  Data  Gb  OpenEIT.o [1]
+m4_configuration        0x20000280    0x28  Data  Gb  OpenEIT.o [1]
+main                    0x00004123   0x338  Code  Gb  OpenEIT.o [1]
+memchr                  0x0000a669          Code  Gb  memchr.o [6]
+multifrequency          0x0000bb80    0x78  Data  Gb  OpenEIT.o [1]
+multiplex_adg732        0x00004935   0x22a  Code  Gb  OpenEIT.o [1]
+pAFE_DevData            0x0000c7a4     0x4  Data  Lc  afe.o [1]
+pAlternateCCD           0x200002c0     0x4  Data  Lc  dma.o [1]
+pDMA_DevData            0x0000c7a8     0x4  Data  Lc  dma.o [1]
+pPrimaryCCD             0x200002bc     0x4  Data  Lc  dma.o [1]
+printf                  0x000090cd    0x24  Code  Gb  printf.o [3]
+privateIntOccFlag       0x2000078f     0x1  Data  Lc  system.o [1]
+putchar                 0x0000c1f5    0x28  Code  Gb  putchar.o [3]
+quit                    0x00006499     0xa  Code  Lc  test_common.o [1]
+scaleTimeout            0x00005ff9    0x18  Code  Lc  system.o [1]
+seq_afe_auxchancal      0x0000be70    0x40  Data  Gb  afe_lib.o [1]
+seq_afe_excitechancalatten1
+                        0x0000c1cc    0x28  Data  Gb  afe_lib.o [1]
+seq_afe_excitechancalatten2
+                        0x0000c4f8    0x1c  Data  Gb  afe_lib.o [1]
+seq_afe_excitechanpowerup
+                        0x0000c6d4    0x10  Data  Gb  afe_lib.o [1]
+seq_afe_fast_acmeasBioZ_4wire
+                        0x2000005c    0x5c  Data  Gb  OpenEIT.o [1]
+seq_afe_fast_meas_4wire
+                        0x20000108    0x48  Data  Gb  OpenEIT.o [1]
+seq_afe_poweritup       0x20000000    0x5c  Data  Gb  OpenEIT.o [1]
+seq_afe_poweritup_bipolar
+                        0x200000b8    0x50  Data  Gb  OpenEIT.o [1]
+seq_afe_powerup         0x0000c2d4    0x24  Data  Gb  afe_lib.o [1]
+seq_afe_tempsenschancal
+                        0x0000bca8    0x58  Data  Gb  afe_lib.o [1]
+seq_afe_tiachancal1     0x0000c2f8    0x24  Data  Gb  afe_lib.o [1]
+seq_afe_tiachancal2     0x0000c42c    0x20  Data  Gb  afe_lib.o [1]
+seq_afe_tiachancal3     0x0000c44c    0x20  Data  Gb  afe_lib.o [1]
+seq_afe_tiachancal4     0x0000c31c    0x24  Data  Gb  afe_lib.o [1]
+seq_afe_tiachancal5     0x0000c4dc    0x1c  Data  Gb  afe_lib.o [1]
+seq_fast_2wire_bipolar  0x200001d0    0x38  Data  Gb  OpenEIT.o [1]
+sequenceCRC             0x0000768b    0x28  Code  Lc  afe.o [1]
+sprintf                 0x00008b89    0x34  Code  Gb  sprintf.o [3]
+sprintf_fixed32         0x00004575    0xa0  Code  Gb  OpenEIT.o [1]
+strcat                  0x000064db    0x1c  Code  Gb  strcat.o [3]
+strchr                  0x0000a651          Code  Gb  strchr.o [6]
+stringfreqs             0x20000194    0x3c  Data  Gb  OpenEIT.o [1]
+strlen                  0x00008bbd          Code  Gb  strlen.o [6]
+test_Fail               0x00006451    0x32  Code  Gb  test_common.o [1]
+test_Init               0x00006419    0x38  Code  Gb  test_common.o [1]
+test_print              0x00004615    0x20  Code  Gb  OpenEIT.o [1]
+time_series             0x000048a7    0x80  Code  Gb  OpenEIT.o [1]
+time_series_bipolar     0x00004817    0x90  Code  Gb  OpenEIT.o [1]
+truth_table             0x0000b5ec   0x180  Data  Gb  OpenEIT.o [1]
+uart_Init               0x00004635    0x9c  Code  Gb  OpenEIT.o [1]
+uart_UnInit             0x000046d1    0x22  Code  Gb  OpenEIT.o [1]
+
+
+[1] = G:\Projects\EIT\EIT_Firmware\iar\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = iar_cortexM3l_math.a
+[5] = m7M_tl.a
+[6] = rt7M_tl.a
+[7] = shb_l.a
+
+  29 042 bytes of readonly  code memory
+  20 627 bytes of readonly  data memory
+  14 589 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
