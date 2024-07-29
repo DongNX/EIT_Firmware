@@ -1,5 +1,5 @@
 *.o
 *.pbi
 *.cout
-# *.dep
+*.dep
 *.wsdt
