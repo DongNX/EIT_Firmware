@@ -2,261 +2,135 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>731221672</fileChecksum>
+  <fileChecksum>3853159520</fileChecksum>
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$PROJ_DIR$\Debug\Obj\afe.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-      <file>$PROJ_DIR$\..\inc\config\adi_uart_config.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-      <file>$PROJ_DIR$\..\test_common.h</file>
-      <file>$PROJ_DIR$\..\PinMux.c</file>
-      <file>$PROJ_DIR$\..\inc\rtc.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\startup.o</file>
-      <file>$PROJ_DIR$\..\test_common.c</file>
-      <file>$PROJ_DIR$\..\Readme.txt</file>
-      <file>$PROJ_DIR$\..\OpenEIT.c</file>
-      <file>$PROJ_DIR$\..\sequences.h</file>
-      <file>$PROJ_DIR$\..\src\rtc.c</file>
-      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-      <file>$TOOLKIT_DIR$\config\linker\AnalogDevices\ADuCM350BBCZ.icf</file>
-      <file>$PROJ_DIR$\..\inc\misra.h</file>
-      <file>$PROJ_DIR$\..\inc\device.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
-      <file>$PROJ_DIR$\..\src\wdt.c</file>
-      <file>$PROJ_DIR$\..\src\startup.c</file>
-      <file>$PROJ_DIR$\..\src\afe.c</file>
-      <file>$PROJ_DIR$\..\src\uart.c</file>
-      <file>$PROJ_DIR$\..\modes.h</file>
-      <file>$PROJ_DIR$\..\src\gpio.c</file>
-      <file>$PROJ_DIR$\..\src\afe_lib.c</file>
-      <file>$PROJ_DIR$\..\src\system.c</file>
-      <file>$PROJ_DIR$\..\lookup.h</file>
-      <file>$PROJ_DIR$\..\src\dma.c</file>
-      <file>$PROJ_DIR$\..\inc\dma.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\Uart_CharEcho.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\rtc.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\ImpedanceMeasurement_4Wire.pbd</file>
-      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-      <file>$PROJ_DIR$\..\inc\config\adi_global_config.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\afe.o</file>
       <file>$PROJ_DIR$\Debug\Obj\wdt.o</file>
       <file>$PROJ_DIR$\Debug\Obj\uart.o</file>
       <file>$PROJ_DIR$\Debug\Exe\openeit.out</file>
       <file>$PROJ_DIR$\Debug\Obj\OpenEIT.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\OpenEIT.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\Uart_CharEcho.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\system.pbi</file>
-      <file>$PROJ_DIR$\..\inc\gpt.h</file>
-      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
-      <file>$PROJ_DIR$\Debug\iar_cortexM3l_math.a</file>
-      <file>$PROJ_DIR$\Debug\Obj\PinMux.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\PinMux.pbi</file>
-      <file>$PROJ_DIR$\..\inc\adi_sid_cm350.h</file>
-      <file>$PROJ_DIR$\..\inc\macros.h</file>
-      <file>$PROJ_DIR$\..\inc\adi_nvic.h</file>
-      <file>$PROJ_DIR$\..\inc\defADuCM350.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\afe.o</file>
+      <file>$PROJ_DIR$\..\src\afe.c</file>
+      <file>$PROJ_DIR$\..\src\gpio.c</file>
+      <file>$PROJ_DIR$\..\src\uart.c</file>
+      <file>$PROJ_DIR$\..\src\dma.c</file>
+      <file>$PROJ_DIR$\..\src\wdt.c</file>
+      <file>$PROJ_DIR$\..\lookup.h</file>
+      <file>$PROJ_DIR$\..\modes.h</file>
+      <file>$PROJ_DIR$\..\OpenEIT.c</file>
+      <file>$PROJ_DIR$\..\src\rtc.c</file>
+      <file>$PROJ_DIR$\..\sequences.h</file>
+      <file>$PROJ_DIR$\..\test_common.c</file>
+      <file>$PROJ_DIR$\..\Readme.txt</file>
+      <file>$PROJ_DIR$\..\src\system.c</file>
+      <file>$PROJ_DIR$\..\src\startup.c</file>
+      <file>$PROJ_DIR$\..\PinMux.c</file>
+      <file>$PROJ_DIR$\..\inc\rtc.h</file>
+      <file>$PROJ_DIR$\..\src\afe_lib.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\ImpedanceMeasurement_4Wire.pbd</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\rtc.pbi</file>
+      <file>$PROJ_DIR$\..\test_common.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+      <file>$PROJ_DIR$\..\inc\misra.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\afe.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup.o</file>
+      <file>$PROJ_DIR$\..\inc\device.h</file>
+      <file>$PROJ_DIR$\..\inc\config\adi_uart_config.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
+      <file>$PROJ_DIR$\..\inc\dma.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$PROJ_DIR$\..\inc\config\adi_global_config.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$PROJ_DIR$\..\inc\gpio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\..\inc\startup.h</file>
+      <file>$PROJ_DIR$\..\inc\adi_version.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\system.o</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\dma.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+      <file>$PROJ_DIR$\..\inc\afe.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\..\inc\config\adi_afe_config.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\openeit.hex</file>
+      <file>$PROJ_DIR$\..\inc\afe_sequences.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\uart.pbi</file>
+      <file>$PROJ_DIR$\..\inc\wut.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\afe_lib.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$PROJ_DIR$\..\inc\uart.h</file>
+      <file>$PROJ_DIR$\..\inc\system.h</file>
+      <file>$PROJ_DIR$\..\inc\core_cmFunc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\test_common.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\dma.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\afe_lib.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\rtc.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$PROJ_DIR$\..\inc\ADuCM350_device.h</file>
+      <file>$PROJ_DIR$\..\inc\config\adi_wut_config.h</file>
+      <file>$PROJ_DIR$\..\inc\core_cm3.h</file>
+      <file>$PROJ_DIR$\..\inc\adi_rtos.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\..\inc\afe_lib.h</file>
+      <file>$PROJ_DIR$\..\inc\arm_math.h</file>
+      <file>$PROJ_DIR$\..\inc\core_cmInstr.h</file>
+      <file>$PROJ_DIR$\..\inc\wdt.h</file>
       <file>$PROJ_DIR$\..\inc\config\adi_gpt_config.h</file>
+      <file>$PROJ_DIR$\..\inc\macros.h</file>
       <file>$PROJ_DIR$\..\inc\adi_int.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\test_common.o</file>
+      <file>$PROJ_DIR$\Debug\iar_cortexM3l_math.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\PinMux.pbi</file>
+      <file>$PROJ_DIR$\..\inc\adi_nvic.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\gpio.o</file>
       <file>$TOOLKIT_DIR$\inc\c\math.h</file>
       <file>$PROJ_DIR$\Debug\Obj\wdt.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\system.pbi</file>
+      <file>$PROJ_DIR$\..\inc\defADuCM350.h</file>
+      <file>$PROJ_DIR$\..\inc\gpt.h</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\PinMux.o</file>
+      <file>$PROJ_DIR$\..\inc\adi_sid_cm350.h</file>
       <file>$PROJ_DIR$\..\inc\config\adi_wdt_config.h</file>
       <file>$PROJ_DIR$\Debug\Obj\gpio.pbi</file>
       <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
-      <file>$PROJ_DIR$\Debug\Obj\gpio.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\uart.pbi</file>
-      <file>$PROJ_DIR$\..\inc\system.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\afe_lib.o</file>
-      <file>$PROJ_DIR$\Debug\Exe\openeit.hex</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
-      <file>$PROJ_DIR$\..\inc\core_cmFunc.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\system.o</file>
-      <file>$PROJ_DIR$\..\inc\uart.h</file>
-      <file>$PROJ_DIR$\..\inc\wut.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\afe_lib.pbi</file>
-      <file>$PROJ_DIR$\..\inc\startup.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\dma.o</file>
-      <file>$PROJ_DIR$\..\inc\adi_version.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-      <file>$PROJ_DIR$\..\inc\config\adi_afe_config.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\startup.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
-      <file>$PROJ_DIR$\..\inc\afe.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\test_common.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-      <file>$PROJ_DIR$\..\inc\gpio.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
-      <file>$PROJ_DIR$\..\inc\afe_sequences.h</file>
-      <file>$PROJ_DIR$\..\inc\config\adi_wut_config.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\dma.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-      <file>$PROJ_DIR$\..\inc\core_cmInstr.h</file>
-      <file>$PROJ_DIR$\..\inc\afe_lib.h</file>
-      <file>$PROJ_DIR$\..\Uart_CharEcho.c</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
-      <file>$PROJ_DIR$\..\inc\arm_math.h</file>
-      <file>$PROJ_DIR$\..\inc\core_cm3.h</file>
-      <file>$PROJ_DIR$\..\inc\ADuCM350_device.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-      <file>$PROJ_DIR$\..\inc\wdt.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\rtc.o</file>
-      <file>$PROJ_DIR$\..\inc\adi_rtos.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\test_common.o</file>
+      <file>$PROJ_DIR$\ADuCM350.icf</file>
     </outputs>
     <file>
       <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
           <name>ILINK</name>
-          <file> 41</file>
+          <file> 2</file>
         </tool>
       </outputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\PinMux.c</name>
+      <name>$PROJ_DIR$\Debug\Exe\openeit.out</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 50</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 49</file>
+          <name>OBJCOPY</name>
+          <file> 54</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 17 37 105 56 96 77 85 1 86 92 84 18 68 16 52 54 51 53 76 99 93 34 88 69 65 81 3 46 55 72 90 87 100</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 17 37 105 56 96 77 85 1 86 92 84 18 68 16 52 54 51 53 76 99 93 34 88 69 65 81 3 46 55 72 90 87 100</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\test_common.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 83</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 57</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 96 77 85 1 86 92 84 18 97 3 30 14 81 101 102 4 103 17 37 105 56 68 16 52 54 51 53 76 99 93 34 88 69 65 46 55 72 90 87 100 60</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 96 77 85 1 86 92 84 18 97 3 30 14 81 101 102 4 103 17 37 105 56 68 16 52 54 51 53 76 99 93 34 88 69 65 46 55 72 90 87 100 60</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\OpenEIT.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 42</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 43</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 97 77 85 1 86 92 84 18 3 30 81 101 102 96 98 99 93 34 88 69 58 33 13 4 103 17 37 105 56 68 16 52 54 51 53 76 65 46 55 72 90 87 100 60 82 29 71 2 79 94 11 27 23</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 97 77 85 1 86 92 84 18 3 30 81 101 102 96 98 99 93 34 88 69 58 33 13 4 103 17 37 105 56 68 16 52 54 51 53 76 65 46 55 72 90 87 100 60 82 29 71 2 79 94 11 27 23</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\src\rtc.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 32</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 104</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 14 77 85 1 86 92 84 18 3 16 6 17 37 105 56 96 68 52 54 51 53 76 99 93 34 88 69 65 81 46 55 72 90 87 100 74</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 14 77 85 1 86 92 84 18 3 16 6 17 37 105 56 96 68 52 54 51 53 76 99 93 34 88 69 65 81 46 55 72 90 87 100 74</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\src\wdt.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 59</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 39</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 16 81 77 85 1 86 92 84 18 3 103 17 37 105 56 96 68 52 54 51 53 76 99 93 34 88 69 65 46 55 72 90 87 100 60 74</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 16 81 77 85 1 86 92 84 18 3 103 17 37 105 56 96 68 52 54 51 53 76 99 93 34 88 69 65 46 55 72 90 87 100 60 74</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\src\startup.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 80</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 7</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 74 17 37 105 56 96 77 85 1 86 92 84 18 68 16 52 54 51 53 76 99 93 34 88 69 65 81 3 46 55 72 90 87 100</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 74 17 37 105 56 96 77 85 1 86 92 84 18 68 16 52 54 51 53 76 99 93 34 88 69 65 81 3 46 55 72 90 87 100</file>
+          <name>ILINK</name>
+          <file> 102 4 96 5 69 48 89 70 32 46 101 1 0 86 38 47 95 100</file>
         </tool>
       </inputs>
     </file>
@@ -264,45 +138,22 @@
       <name>$PROJ_DIR$\..\src\afe.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 0</file>
+          <name>ICCARM</name>
+          <file> 5</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 38</file>
+          <name>BICOMP</name>
+          <file> 31</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 16 14 77 85 1 86 92 84 18 3 29 17 37 105 56 96 68 52 54 51 53 76 99 93 34 88 69 65 81 46 55 72 90 87 100 82 71 2 79</file>
-        </tool>
-        <tool>
           <name>ICCARM</name>
-          <file> 16 14 77 85 1 86 92 84 18 3 29 17 37 105 56 96 68 52 54 51 53 76 99 93 34 88 69 65 81 46 55 72 90 87 100 82 71 2 79</file>
+          <file> 30 25 43 51 40 53 56 61 26 24 36 33 39 76 85 78 62 84 93 97 88 45 75 81 29 66 65 64 49 94 83 58 74 42 73 50 63 34 52</file>
         </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\src\uart.c</name>
-      <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 64</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 40</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 16 81 77 85 1 86 92 84 18 3 101 102 71 17 37 105 56 96 68 52 54 51 53 76 99 93 34 88 69 65 46 55 72 90 87 100 2</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 16 81 77 85 1 86 92 84 18 3 101 102 71 17 37 105 56 96 68 52 54 51 53 76 99 93 34 88 69 65 46 55 72 90 87 100 2</file>
+          <file> 30 25 43 51 40 53 56 61 26 24 36 33 39 76 85 78 62 84 93 97 88 45 75 81 29 66 65 64 49 94 83 58 74 42 73 50 63 34 52</file>
         </tool>
       </inputs>
     </file>
@@ -310,68 +161,41 @@
       <name>$PROJ_DIR$\..\src\gpio.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 61</file>
+          <name>ICCARM</name>
+          <file> 89</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 63</file>
+          <name>BICOMP</name>
+          <file> 99</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 16 87 17 37 105 56 96 77 85 1 86 92 84 18 68 52 54 51 53 76 99 93 34 88 69 65 81 3 46 55 72 90 100</file>
-        </tool>
-        <tool>
           <name>ICCARM</name>
-          <file> 16 87 17 37 105 56 96 77 85 1 86 92 84 18 68 52 54 51 53 76 99 93 34 88 69 65 81 3 46 55 72 90 100</file>
+          <file> 30 42 33 39 76 85 78 43 51 40 53 56 61 26 62 84 93 97 88 45 75 81 29 66 65 64 49 24 94 83 58 74 73</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\src\afe_lib.c</name>
+      <name>$PROJ_DIR$\..\src\uart.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 73</file>
+          <name>ICCARM</name>
+          <file> 1</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 66</file>
+          <name>BICOMP</name>
+          <file> 57</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 16 14 77 85 1 86 92 84 18 3 82 17 37 105 56 96 68 52 54 51 53 76 99 93 34 88 69 65 81 46 55 72 90 87 100 29 71 2 79 94 89</file>
-        </tool>
-        <tool>
           <name>ICCARM</name>
-          <file> 16 14 77 85 1 86 92 84 18 3 82 17 37 105 56 96 68 52 54 51 53 76 99 93 34 88 69 65 81 46 55 72 90 87 100 29 71 2 79 94 89</file>
+          <file> 30 49 43 51 40 53 56 61 26 24 71 77 63 33 39 76 85 78 62 84 93 97 88 45 75 81 29 66 65 64 94 83 58 74 42 73 34</file>
         </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\src\system.c</name>
-      <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 45</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 70</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 96 77 85 1 86 92 84 18 65 81 3 17 37 105 56 68 16 52 54 51 53 76 99 93 34 88 69 100 46 55 72 90 87</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 96 77 85 1 86 92 84 18 65 81 3 17 37 105 56 68 16 52 54 51 53 76 99 93 34 88 69 100 46 55 72 90 87</file>
+          <file> 30 49 43 51 40 53 56 61 26 24 71 77 63 33 39 76 85 78 62 84 93 97 88 45 75 81 29 66 65 64 94 83 58 74 42 73 34</file>
         </tool>
       </inputs>
     </file>
@@ -379,67 +203,454 @@
       <name>$PROJ_DIR$\..\src\dma.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 91</file>
+          <name>ICCARM</name>
+          <file> 48</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 75</file>
+          <name>BICOMP</name>
+          <file> 68</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 16 29 17 37 105 56 96 77 85 1 86 92 84 18 68 52 54 51 53 76 99 93 34 88 69 65 81 3 46 55 72 90 87 100 97 30</file>
+          <name>ICCARM</name>
+          <file> 30 36 33 39 76 85 78 43 51 40 53 56 61 26 62 84 93 97 88 45 75 81 29 66 65 64 49 24 94 83 58 74 42 73 72 41</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 16 29 17 37 105 56 96 77 85 1 86 92 84 18 68 52 54 51 53 76 99 93 34 88 69 65 81 3 46 55 72 90 87 100 97 30</file>
+          <name>BICOMP</name>
+          <file> 30 36 33 39 76 85 78 43 51 40 53 56 61 26 62 84 93 97 88 45 75 81 29 66 65 64 49 24 94 83 58 74 42 73 72 41</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\Debug\Exe\openeit.out</name>
+      <name>$PROJ_DIR$\..\src\wdt.c</name>
       <outputs>
         <tool>
-          <name>OBJCOPY</name>
+          <name>ICCARM</name>
+          <file> 0</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 91</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 30 49 43 51 40 53 56 61 26 24 82 33 39 76 85 78 62 84 93 97 88 45 75 81 29 66 65 64 94 83 58 74 42 73 98 44</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30 49 43 51 40 53 56 61 26 24 82 33 39 76 85 78 62 84 93 97 88 45 75 81 29 66 65 64 94 83 58 74 42 73 98 44</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\OpenEIT.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 72 43 51 40 53 56 61 26 24 41 49 71 77 78 80 75 81 29 66 65 90 35 37 28 82 33 39 76 85 62 30 84 93 97 88 45 64 94 83 58 74 42 73 98 50 36 63 34 52 79 15 11 12</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72 43 51 40 53 56 61 26 24 41 49 71 77 78 80 75 81 29 66 65 90 35 37 28 82 33 39 76 85 62 30 84 93 97 88 45 64 94 83 58 74 42 73 98 50 36 63 34 52 79 15 11 12</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\src\rtc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 25 43 51 40 53 56 61 26 24 30 21 33 39 76 85 78 62 84 93 97 88 45 75 81 29 66 65 64 49 94 83 58 74 42 73 44</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 43 51 40 53 56 61 26 24 30 21 33 39 76 85 78 62 84 93 97 88 45 75 81 29 66 65 64 49 94 83 58 74 42 73 44</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\test_common.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 101</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
           <file> 67</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ILINK</name>
-          <file> 15 43 49 38 66 75 63 104 7 70 57 40 39 48 36 78 47 62</file>
+          <name>ICCARM</name>
+          <file> 78 43 51 40 53 56 61 26 72 24 41 25 49 71 77 28 82 33 39 76 85 62 30 84 93 97 88 45 75 81 29 66 65 64 94 83 58 74 42 73 98</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 78 43 51 40 53 56 61 26 72 24 41 25 49 71 77 28 82 33 39 76 85 62 30 84 93 97 88 45 75 81 29 66 65 64 94 83 58 74 42 73 98</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\Uart_CharEcho.c</name>
+      <name>$PROJ_DIR$\..\src\system.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 44</file>
+          <name>ICCARM</name>
+          <file> 46</file>
         </tool>
         <tool>
+          <name>BICOMP</name>
+          <file> 92</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
           <name>ICCARM</name>
-          <file> 31</file>
+          <file> 78 43 51 40 53 56 61 26 64 49 24 33 39 76 85 62 30 84 93 97 88 45 75 81 29 66 65 73 94 83 58 74 42</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 78 43 51 40 53 56 61 26 64 49 24 33 39 76 85 62 30 84 93 97 88 45 75 81 29 66 65 73 94 83 58 74 42</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\src\startup.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 32</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 44 33 39 76 85 78 43 51 40 53 56 61 26 62 30 84 93 97 88 45 75 81 29 66 65 64 49 24 94 83 58 74 42 73</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 44 33 39 76 85 78 43 51 40 53 56 61 26 62 30 84 93 97 88 45 75 81 29 66 65 64 49 24 94 83 58 74 42 73</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\PinMux.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 96</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 87</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 33 39 76 85 78 43 51 40 53 56 61 26 62 30 84 93 97 88 45 75 81 29 66 65 64 49 24 94 83 58 74 42 73</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33 39 76 85 78 43 51 40 53 56 61 26 62 30 84 93 97 88 45 75 81 29 66 65 64 49 24 94 83 58 74 42 73</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\src\afe_lib.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 69</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 30 25 43 51 40 53 56 61 26 24 50 33 39 76 85 78 62 84 93 97 88 45 75 81 29 66 65 64 49 94 83 58 74 42 73 36 63 34 52 79 55</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30 25 43 51 40 53 56 61 26 24 50 33 39 76 85 78 62 84 93 97 88 45 75 81 29 66 65 64 49 94 83 58 74 42 73 36 63 34 52 79 55</file>
+        </tool>
+      </inputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\src\afe.c</file>
+      <file>$PROJ_DIR$\..\src\gpio.c</file>
+      <file>$PROJ_DIR$\..\src\uart.c</file>
+      <file>$PROJ_DIR$\..\src\dma.c</file>
+      <file>$PROJ_DIR$\..\src\wdt.c</file>
+      <file>$PROJ_DIR$\..\lookup.h</file>
+      <file>$PROJ_DIR$\..\modes.h</file>
+      <file>$PROJ_DIR$\..\OpenEIT.c</file>
+      <file>$PROJ_DIR$\..\src\rtc.c</file>
+      <file>$PROJ_DIR$\..\sequences.h</file>
+      <file>$PROJ_DIR$\..\test_common.c</file>
+      <file>$PROJ_DIR$\..\Readme.txt</file>
+      <file>$PROJ_DIR$\..\src\system.c</file>
+      <file>$PROJ_DIR$\..\src\startup.c</file>
+      <file>$PROJ_DIR$\..\PinMux.c</file>
+      <file>$PROJ_DIR$\..\inc\rtc.h</file>
+      <file>$PROJ_DIR$\..\src\afe_lib.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\..\test_common.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\Release\Obj\uart.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\test_common.o</file>
+      <file>$PROJ_DIR$\Release\Obj\startup.o</file>
+      <file>$PROJ_DIR$\Release\Obj\gpio.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\system.o</file>
+      <file>$PROJ_DIR$\Release\Obj\uart.o</file>
+      <file>$PROJ_DIR$\Release\Obj\afe_lib.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\afe.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\OpenEIT.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\rtc.o</file>
+      <file>$PROJ_DIR$\Release\Obj\dma.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\afe_lib.o</file>
+      <file>$PROJ_DIR$\Release\Obj\gpio.o</file>
+      <file>$PROJ_DIR$\Release\Obj\PinMux.o</file>
+      <file>$PROJ_DIR$\Release\Obj\startup.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\wdt.o</file>
+      <file>$PROJ_DIR$\Release\Obj\system.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\PinMux.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\dma.o</file>
+      <file>$PROJ_DIR$\Release\Obj\afe.o</file>
+      <file>$PROJ_DIR$\Release\Obj\wdt.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\OpenEIT.o</file>
+      <file>$PROJ_DIR$\Release\Obj\rtc.pbi</file>
+      <file>$PROJ_DIR$\Release\Exe\ImpedanceMeasurement_2Wire.out</file>
+      <file>$PROJ_DIR$\Release\Obj\test_common.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\ImpedanceMeasurement_4Wire.pbd</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 56</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\src\afe.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\src\gpio.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 45</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 36</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\src\uart.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\src\dma.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 43</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\src\wdt.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 48</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\OpenEIT.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 54</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 4 103 17 37 105 56 96 77 85 1 86 92 84 18 68 16 52 54 51 53 76 99 93 34 88 69 65 81 3 46 55 72 90 87 100 60 97 30 71 2</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 4 103 17 37 105 56 96 77 85 1 86 92 84 18 68 16 52 54 51 53 76 99 93 34 88 69 65 81 3 46 55 72 90 87 100 60 97 30 71 2</file>
+          <file> 30 23 25 21 26 27 28 19 17 22 24 29 31 32 20 9 5 6</file>
         </tool>
       </inputs>
     </file>
-  </configuration>
-  <configuration>
-    <name>Release</name>
-    <outputs/>
+    <file>
+      <name>$PROJ_DIR$\..\src\rtc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 42</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 23 25 21 26 27 28 19 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\test_common.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 57</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\src\system.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 37</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\src\startup.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 47</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\PinMux.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 46</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 50</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\src\afe_lib.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 44</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 39</file>
+        </tool>
+      </outputs>
+    </file>
     <forcedrebuild>
       <name>[MULTI_TOOL]</name>
       <tool>ILINK</tool>
