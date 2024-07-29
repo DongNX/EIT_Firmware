@@ -3,3 +3,5 @@
 *.cout
 *.dep
 *.wsdt
+iar/Debug/Obj/ImpedanceMeasurement_4Wire.pbd.browse
+iar/Debug/Obj/ImpedanceMeasurement_4Wire.pbd

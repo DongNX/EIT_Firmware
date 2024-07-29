@@ -1896,9 +1896,6 @@
       <name>$PROJ_DIR$\..\test_common.c</name>
     </file>
   </group>
-  <file>
-    <name>$PROJ_DIR$\..\Readme.txt</name>
-  </file>
 </project>
 
 
